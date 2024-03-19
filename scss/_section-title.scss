@@ -1,0 +1,114 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(lg){
+        br{display: none;}
+    }
+    .sub-title {
+        position: relative;
+        display: inline-block;
+        font-size: var(--sec-title-subtitle-font-size);
+        line-height: var(--sec-title-subtitle-line-height);
+        font-weight: var(--sec-title-subtitle-font-weight);
+        font-family: var(--sec-title-subtitle-font-family);
+        color: var(--sec-title-subtitle-color);
+        text-transform: uppercase;
+        padding-right: 46px;
+        letter-spacing: 1.3px;
+        margin-bottom: 10px;
+        &:before{
+            position: absolute;
+            right: 0;
+            top: 2px;
+            height: 14px;
+            width: 32px;
+            background-image: url(../images/icons/sub-title-before.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+        }
+    }
+    h2 {
+        position: relative;
+        display: block;
+        font-size: var(--sec-title-font-size);
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+        margin-bottom: 0;
+        z-index: 2;
+        @include media-breakpoint-down(sm){
+            font-size: 36px;
+            line-height: 1.1em;
+            letter-spacing: -1px;
+        }
+    }
+    .text {
+        margin-top: 20px;
+    }
+    &.light{
+        .sub-title,
+        .text,
+        h2,
+        h1{
+            color: #fff;
+        }
+
+        .sub-title{
+            &::before{
+                background-image: url(../images/icons/sub-title-before-colored.png);
+            }
+        }
+    }
+
+    &.alt{
+        .sub-title{
+            &::before{
+                background-image: url(../images/icons/sub-title-before-colored.png);
+            }
+            &::after{
+                background-image: url(../images/icons/sub-title-before-colored.png);
+            }
+        }
+    }
+
+    &.text-center{
+        .sub-title{
+            padding-left: 46px;
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 2px;
+                height: 14px;
+                width: 32px;
+                background-image: url(../images/icons/sub-title-before.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                content: "";
+                transform: scaleX(-1);
+            }
+        }
+    }
+    &.v2 {
+        .sub-title {
+            padding-left: 0;
+            &:after {display: none;}
+        }
+    }
+    &.v3 {
+        .sub-title {
+            padding-left: 0;
+            padding-right: 0;
+            &:after {display: none;}
+            &:before {display: none;}
+        }
+    }
+}

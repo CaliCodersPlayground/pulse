@@ -1,0 +1,80 @@
+/*** 
+
+====================================================================
+pricing Section
+====================================================================
+
+***/
+
+.pricing-section{
+    position: relative;
+    padding: 120px 0 80px;
+    .content-column{
+        .inner-column {
+            margin-top: 140px;
+            @include media-breakpoint-down(xl){margin-top: 70px;}
+            @include media-breakpoint-down(lg){
+                margin-top: 0
+            }
+        }
+    }
+}
+
+// pricing-block
+.pricing-block{
+    margin-bottom: 40px;
+    .inner-box{
+        border-radius: 5px;
+        border: 1px solid  #E3E3E3;
+        transition: all 300ms ease;
+        &:hover{
+            box-shadow: 0 20px 30px rgba(0,0,0,.05);
+        }
+        .plan-price{
+            padding: 40px 40px 23px;
+            border-bottom: 1px solid #E3E3E3;
+            .title{
+                color: var(--headings-color);
+                margin-bottom: 7px;
+                small{
+                    font-size: 20px;
+                }
+            }
+            .plan{
+                font-size: 24px;
+                color: var(--headings-color);
+            }
+        }
+        .plan-list{
+            padding: 40px 40px;
+            .user-links{
+                margin-bottom: 36px;
+                li{
+                    position: relative;
+                    color: var(--headings-color);
+                    margin-bottom: 11px;
+                    padding-left: 32px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        position: static;
+                        color: var(--theme-color-dark);
+                        &:hover{
+                            color: var(--headings-color);
+                        }
+                        i{
+                            color: var(--headings-color);
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .theme-btn {
+                width: 100%;
+                padding: 8px 30px;
+            }
+        }
+    }
+}

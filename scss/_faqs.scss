@@ -1,0 +1,158 @@
+/*** 
+
+====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+
+.faqs-section {
+	position: relative;
+	padding: 120px 0 70px;
+	background-color: var(--theme-color-gray);
+	@include media-breakpoint-down(md){
+		padding-top: 40px;
+	}
+	.sec-title{
+		margin-bottom: 50px;
+	}
+    .faq-column{
+		margin-bottom: 50px;
+		.inner-column{
+			position: relative;
+			border-radius: 10px;
+			padding-right: 40px;
+			@include media-breakpoint-down(xxl){
+				padding-right: 0;
+			}
+		}
+    }
+
+    .image-column{
+		.inner-column{
+			height: 100%;
+            margin-right: -317px;
+			@include media-breakpoint-down(xl){
+				margin-right: -15px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-right: 0;
+			}
+            .image{
+				height: 100%;
+                img{
+                    border-radius: 10px 0 0 0;
+					height: 100%;
+					object-fit: cover;
+                }
+            }
+        }
+		@include media-breakpoint-down(sm){
+            display: none;
+        }
+	}
+
+	.info-box{
+		position: absolute;
+		right: 50px;
+		top: 170px;
+		height: 174px;
+		width: 174px;
+		background-color: var(--bg-theme-color2);
+		padding: 40px 20px 20px;
+		border-radius: 7px;
+		text-align: center;
+		@include media-breakpoint-down(md){
+			right: auto;
+			top: auto;
+			left: 30px;
+			bottom: 0px;
+		}
+		.icon{
+			position: absolute;
+			top: -70px;
+			right: 30px;
+		}
+		.count-box {
+			font-size: 48px;
+			line-height: 58px;
+			font-weight: 600;
+			@include title-font;
+			color: var(--theme-color-light);
+			margin-bottom: 5px;
+			.count-text {
+				font-size: 48px;
+				line-height: 58px;
+				font-weight: 600;
+				@include title-font;
+				color: var(--theme-color-light);
+			}
+		}
+		.title {
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: 400;
+			color: #FFFFFF;
+		}
+	}
+}
+
+
+.accordion-box {
+	position: relative;
+	.block {
+		position: relative;
+		&:last-child{margin-bottom: 0;}
+        margin-bottom: 20px;
+        background-color: var(--theme-color-light);
+		.acc-btn {
+			position: relative;
+			color: var( --theme-color-dark);
+			cursor: pointer;
+            @include title-font;
+			background-color: var(--theme-color-light);
+			padding: 20px 30px;
+			padding-right: 70px;
+			border-radius: 5px;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 27px;
+			transition: all 500ms ease;
+			@include media-breakpoint-down(sm){
+				padding: 20px 30px;
+				padding-right: 50px;
+				font-size: 18px;
+				line-height: 1.2em;
+			}
+			.icon {
+				position: absolute;
+				right: 0px;
+				top: 5px;
+				height: 58px;
+                width: 58px;
+				font-size: 16px;
+				line-height: 58px;
+				color: var(--theme-color2);
+				text-align: center;
+				transition: all 500ms ease;
+			}
+		}
+		.acc-btn.active {
+			.icon {
+				&:before {content: "\f068";}
+			}
+		}
+		.acc-content {
+			position: relative;
+			display: none;
+			.content {
+				padding: 0 30px 20px;
+				.text {margin-bottom: 0;}
+			}
+		}
+		.acc-content.current {display: block;}
+	}
+	.block.active-block {
+		box-shadow: 0px 16px 52px 0px rgba(0, 0, 0, 0.07);
+	}
+}

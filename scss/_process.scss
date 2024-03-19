@@ -1,0 +1,754 @@
+/***
+
+====================================================================
+    Process Section
+====================================================================
+
+***/
+
+.process-section{
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+// process-block
+.process-block{
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        &:hover {
+            .content-box {
+                background-color: var(--bg-theme-color1);
+                border-color: var(--bg-theme-color1);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                transform: translateY(-10px);
+            }
+        }
+        .content-box{
+            text-align: center;
+            border: 2px solid var(--theme-color-dark);
+            border-radius: 5px;
+            padding: 40px 40px;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(xl){
+                padding: 30px;
+            }
+            @include media-breakpoint-down(sm){
+                padding: 30px 15px;
+            }
+            .title{
+                color: var(--theme-color-dark);
+                margin-bottom: 19px;
+            }
+            .text{
+                color: var(--text-color);
+                margin-bottom: 0;
+            }
+            .count{
+                position: relative;
+                width: 60px;
+                margin: 0 auto 20px;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                background-color: var(--theme-color-dark);
+                color: var(--theme-color1);
+                border-radius: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                display: inline-block;
+                font-family: var(--title-font);
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                    width: 70px;
+                    height: 70px;
+                    text-align: center;
+                    line-height: 70px;
+                    border: 1px solid var(--theme-color-dark);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Two
+====================================================================
+
+***/
+
+.process-section-two{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-gray);
+    .sec-title {
+        .sub-title {
+            padding-left: 0;
+            &:after {display: none;}
+        }
+    }
+}
+
+// Service block two
+.process-block-two{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        background: var(--theme-color-light);
+        padding: 30px 30px;
+        overflow: hidden;
+        transition: all 300ms ease;
+        &:hover{
+            .icon{
+                color: var(--theme-color1);
+                &:before{
+                    background-color: var(--theme-color-dark);
+                    border-radius: 50%;
+                }
+            }
+        }
+        .icon{
+            position: relative;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 76px;
+            color: var(--theme-color-dark);
+            margin-bottom: 57px;
+            line-height: 1em;
+            z-index: 9;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+                margin-bottom: 29px;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                line-height: 80px;
+                border-radius: 5px;
+                background-color: var(--theme-color1);
+                z-index: -1;
+                transition: all 300ms ease;
+            }
+        }
+        .count{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 48px;
+            font-weight: 700;
+            color: #E3E3E3;
+            line-height: 62px;
+            font-family: var(--title-font);
+            transition: all 300ms ease;
+        }
+        .title{
+            position: relative;
+            color: var(--theme-color-dark);
+            margin-bottom: 4px;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0.18px;
+        }
+        .text{
+            position: relative;
+            margin-bottom: 0px;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Three
+====================================================================
+
+***/
+
+.process-section-three{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-dark);
+}
+
+// process-block
+.process-block-three{
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .content-box{
+                .count{
+                    background-color: var(--theme-color-light);
+                    color: var(--theme-color-dark);
+                }
+            }
+        }
+        .content-box{
+            text-align: center;
+            border: 2px solid rgba(50, 50, 57, 1.0);
+            border-radius: 5px;
+            padding: 40px 30px 40px;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+                padding: 30px 22px 30px;
+            }
+            .title{
+                color: var(--theme-color-light);
+                margin-bottom: 10px;
+            }
+            .text{
+                color: var(--theme-color-light);
+                margin-bottom: 0;
+            }
+            .count{
+                position: relative;
+                width: 80px;
+                margin: 0 auto 20px;
+                height: 80px;
+                text-align: center;
+                line-height: 80px;
+                background-color: var(--theme-color1);
+                color: var(--theme-color-dark);
+                border-radius: 50px;
+                font-size: 26px;
+                font-weight: 600;
+                display: inline-block;
+                font-family: var(--title-font);
+                transition: all 300ms ease;
+            }
+        }
+    }
+}
+
+
+
+/***
+
+====================================================================
+    Process Section Four
+====================================================================
+
+***/
+
+.process-section-four{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-gray);
+}
+
+//process-section four
+.process-block-four{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        padding: 32px 30px 30px;
+        border: 1px solid var(--theme-color-dark);
+        background-color: var(--theme-color-light);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        &:hover{
+            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+            border: 1px solid var(--theme-color1);
+            .icon{
+                transform: scale(-1) rotate(180deg);
+            }
+        }
+        .icon{
+            display: inline-block;
+            font-size: 60px;
+            color: var(--theme-color-dark);
+            transition: all 300ms ease;
+            line-height: 1em;
+            margin-bottom: 30px;
+        }
+
+        .count{
+            position: absolute;
+            top: 30px;
+            right: 35px;
+            font-size: 48px;
+            color: #E3E3E3;
+            font-weight: 700;
+            line-height: 62.4px;
+            font-family: var(--title-font);
+        }
+
+        .title{
+            color: var(--theme-color-dark);
+            margin-bottom: 3px;
+            font-weight: 700;
+            line-height: 52px;
+            border-top: 1px solid #E3E3E3;
+            padding-top: 20px;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .text{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Five
+====================================================================
+
+***/
+
+.process-section-five{
+    position: relative;
+    padding: 120px 0 90px;
+    background-color: var(--theme-color-gray);
+}
+
+//process-section five
+.process-block-five{
+    position: relative;
+    margin-bottom: 50px;
+    .inner-box{
+        margin-top: 30px;
+        position: relative;
+        padding: 56px 30px 33px;
+        background-color: var(--theme-color-light);
+        border-radius: 5px;
+        transition: all 300ms ease;
+        @include media-breakpoint-down(sm){
+            padding: 30px 30px;
+            margin-top: 0;
+        }
+        &:hover{
+            .icon{
+                background-color: var(--theme-color-dark);
+                color: var(--theme-color1);
+            }
+        }
+        .icon{
+            position: absolute;
+            top: -39px;
+            right: 0;
+            width: 85px;
+            height: 85px;
+            margin-right: 30px;
+            text-align: center;
+            line-height: 85px;
+            border-radius: 5px;
+            background-color: var(--theme-color1);
+            display: inline-block;
+            font-size: 50px;
+            color: var(--theme-color-dark);
+            transition: all 300ms ease;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .count{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            font-size: 48px;
+            color:  #E3E3E3;
+            font-weight: 700;
+            line-height: 62.4px;
+            font-family: var(--title-font);
+            @include media-breakpoint-down(sm){
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
+        .title{
+            color: var(--theme-color-dark);
+            margin-bottom: 10px;
+            font-family: DM Sans;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 31px;
+            letter-spacing: 0.15px;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .text{
+            margin-bottom: 34px;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+        .theme-btn {
+            @include media-breakpoint-down(sm){
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Six
+====================================================================
+
+***/
+
+.process-section-six{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-gray);
+}
+
+//process Block six
+.process-block-six{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        padding: 30px 40px 40px;
+        background-color: var(--theme-color-light);
+        border-radius: 5px;
+        transition: all 300ms ease;
+        @include media-breakpoint-down(sm){
+            padding: 20px;
+        }
+        .count{
+            position: absolute;
+            top: 25px;
+            right: 28px;
+            font-size: 48px;
+            color:  #E3E3E3;
+            font-weight: 700;
+            line-height: 62.4px;
+            font-family: var(--title-font);
+            @include media-breakpoint-down(xl){
+                position: relative;
+                left: 0;
+                top:0;
+            }
+        }
+
+        .title{
+            color: var(--theme-color-dark);
+            margin-bottom: 9px;
+            font-weight: 700;
+            line-height: 52px;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .text{
+            margin-bottom: 30px;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+        .theme-btn {
+            @include media-breakpoint-down(sm){
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Seven
+====================================================================
+
+***/
+
+.process-section-seven{
+    position: relative;
+    padding: 120px 0 90px;
+    background-color: var(--theme-color-gray);
+}
+
+//Service Block seven
+.process-block-seven{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        padding: 56px 30px 123px;
+        background-color: var(--theme-color-light);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-align: center;
+        @include media-breakpoint-down(sm){
+            padding: 46px 25px 107px;
+        }
+        &:hover{
+            .icon{
+                transform: scale(-1) rotate(180deg);
+            }
+        }
+        .icon{
+            width: 85px;
+            height: 85px;
+            text-align: center;
+            line-height: 85px;
+            border-radius: 5px;
+            border: 1px solid  #E3E3E3;
+            display: inline-block;
+            font-size: 50px;
+            color: var(--theme-color-dark);
+            transition: all 300ms ease;
+            margin-bottom: 25px;
+        }
+
+        .count{
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 62.4px;
+            font-family: var(--title-font);
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--theme-color-dark);
+            @include media-breakpoint-down(sm){
+                bottom: 20px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 30px;
+                right: -167px;
+                width: 138px;
+                height: 1px;
+                background-color: rgba(190, 190, 193, 1.0);
+                @include media-breakpoint-down(xxl){
+                    display: none;
+                }
+            }
+        }
+
+        .title{
+            color: var(--theme-color-dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 31px;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .text{
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            }
+        }
+        .theme-btn {
+            position: absolute;
+            right: 30px;
+            bottom: 41px;
+            font-size: 24px;
+            padding: 15px 36px;
+            i{margin-left: 0;}
+            @include media-breakpoint-down(sm){
+                bottom: 30px;
+                font-size: 18px;
+                padding: 10px 29px;
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Eight
+====================================================================
+
+***/
+
+.process-section-eight{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-gray);
+}
+
+//process-block-eight
+.process-block-eight{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        text-align: center;
+        padding: 49px 30px 58px;
+        background-color: var(--theme-color-light);
+        transition: all 300ms ease;
+        @include media-breakpoint-down(md){
+            padding: 40px 24px 40px;
+        }
+        &:hover{
+            .icon{
+                transform: scaleX(-1);
+                background-color: var(--theme-color-dark);
+                color: var(--theme-color1);
+            }
+        }
+        .icon{
+            width: 85px;
+            height: 85px;
+            background-color: var(--theme-color1);
+            line-height: 85px;
+            text-align: center;
+            display: inline-block;
+            font-size: 54px;
+            color: var(--theme-color-dark);
+            transition: all 300ms ease;
+            margin-bottom: 32px;
+        }
+        .title{
+            color: var(--theme-color-dark);
+            margin-bottom: 21px;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .text{
+            margin-bottom: 30px;
+        }
+        .theme-btn {
+            padding: 9px 30px;
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Process Section Nine
+====================================================================
+
+***/
+
+.process-section-nine{
+    position: relative;
+    padding: 120px 0 90px;
+    background-color: #1F242C;
+}
+
+//Service Block nine
+.process-block-nine{
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        padding: 56px 30px 145px;
+        border: 1px solid #333F4D;
+        border-radius: 5px;
+        transition: all 300ms ease;
+        &:hover{
+            background-color: rgba(35, 40, 48, 1.0);
+            border-color: transparent;
+            .icon{
+                transform: scale(-1) rotate(180deg);
+            }
+            .read-more{
+                color: var(--theme-color1);
+            }
+        }
+
+        .count{
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+            font-size: 48px;
+            color: rgba(53, 58, 65, 1.0);
+            font-weight: 700;
+            line-height: 62.4px;
+            font-family: var(--title-font);
+            &::before{
+                content: "";
+                position: absolute;
+                top: 30px;
+                right: -75px;
+                width: 55px;
+                height: 1px;
+                background-color: rgba(190, 190, 193, 1.0);
+            }
+        }
+        .info-box{
+            position: relative;
+            .icon{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 65px;
+                color: var(--theme-color1);
+                transition: all 300ms ease;
+                line-height: 65px;
+                @include media-breakpoint-down(sm){
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+    
+            .title{
+                color: var(--theme-color-light);
+                margin-bottom: 31px;
+                font-weight: 700;
+                line-height: 31px;
+                a:hover{
+                    color: var(--theme-color1);
+                }
+            }
+        }
+        .text{
+            margin-bottom: 0;
+            color: var(--theme-color-light);
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+            } 
+        }
+        .read-more{
+            position: absolute;
+            right: 0;
+            bottom: 41px;
+            font-size: 24px;
+            padding: 15px 32px;
+            line-height: 35px;
+            border-radius: 5px 0 0 5px;
+            background-color: rgba(255,255,255, .04);
+            color: var(--theme-color-light);
+        }
+    }
+}

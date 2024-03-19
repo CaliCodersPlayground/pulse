@@ -1,0 +1,1046 @@
+/*** 
+
+====================================================================
+    Project Section
+====================================================================
+
+***/
+
+.project-section{
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+}
+
+// project Block
+.project-block{
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        &:hover {
+            .image img {
+                transform: scale(1.1);
+            }
+            .social-links {
+                transform: scaleY(1);
+                opacity: 1;
+                visibility: visible;
+            }
+            .info-box {
+                &:before {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        .image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            border-radius: 5px;
+            z-index: 1;
+            img {
+                width: 100%;
+                transition: all 400ms ease;
+            }
+        }
+    }
+
+    .info-box {
+        position: relative;
+        padding: 30px;
+        text-align: center;
+        background: var(--theme-color-gray);
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        z-index: 2;
+        transition: all 300ms ease;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: var(--theme-color-dark);
+            transition: all 300ms ease;
+            border-radius: 10px;
+        }
+        .title{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Two
+====================================================================
+
+***/
+
+.project-section-two{
+    position: relative;
+    padding: 120px 0 90px;
+    @include media-breakpoint-down(md){
+        padding: 80px 0 60px;
+    }
+}
+
+// project-block-two
+.project-block-two{
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        &:hover{
+            .image-box{
+                .image{
+                    border-radius: 5px;
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                &:before {height: 100%;}
+            }
+            .content-box{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .content-box{
+            position: absolute;
+            bottom: 24px;
+            left: 32px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 300ms ease;
+            z-index: 9;
+            .sub-title{
+                color: var(--theme-color-light);
+            }
+            .title{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 0;
+                color: var(--theme-color-light);
+            }
+        }
+        .image-box{
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0%;
+                background: linear-gradient(180deg, rgba(39, 39, 47, 0.00) 25.52%, #27272F 100%);
+                pointer-events: none;
+                transition: all 300ms ease;
+                transform-origin: bottom;
+                z-index: 8;
+            }
+            .image{
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Three
+====================================================================
+
+***/
+
+.project-section-three{
+    position: relative;
+    padding: 120px 0 90px;
+    background: var(--theme-color-gray);
+}
+
+// project-block-three
+.project-block-three{
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .image-box{
+                .image{
+                    border-radius: 5px;
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                .read-more{
+                    top: 15px;
+                    right: 15px;
+                    opacity: 1;
+                    transition-delay: 100ms;
+                    @include media-breakpoint-down(sm){
+                        right: 20px;
+                        top: 20px;
+                    }
+                }
+            }
+            .content-box{
+                transform: translateY(0px);
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
+        .content-box{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 29px 30px 25px;
+            opacity: 0;
+            border-radius: 0px 0px 5px 5px;
+            background: var(--theme-color-dark);
+            transition: all 300ms ease;
+            transform: translateY(50px);
+            z-index: 10;
+            .sub-title{
+                color: var(--theme-color-light);
+            }
+            .title{
+                font-weight: 700;
+                margin-bottom: 5px;
+                color: var(--theme-color-light);
+                @include media-breakpoint-down(sm){
+                    font-size: 20px;
+                }
+            }
+        }
+        .image-box{
+            .image{
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    transition: all 0.3s ease;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+            }
+            .read-more{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 65px;
+                height: 65px;
+                line-height: 65px;
+                color: var(--theme-color-dark);
+                background-color: var(--bg-theme-color1);
+                border-radius: 50%;
+                font-size: 20px;
+                opacity: 0;
+                font-weight: 900;
+                text-align: center;
+                transition: all 300ms ease;
+                z-index: 10;
+                &:hover {
+                    background-color: var(--theme-color-dark);
+                    color: var(--theme-color-light);
+                }
+                i{
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*** 
+
+====================================================================
+    Project Section Four
+====================================================================
+
+***/
+
+.project-section-four{
+    position: relative;
+    padding: 120px 0 80px;
+    background: var(--theme-color-gray);
+    @include media-breakpoint-down(xl){
+        padding: 80px 0;
+    }
+    .sec-title {
+        .read-more {
+            position: absolute;
+            right: 0;
+            top: 95px;
+            border-radius: 5px;
+            z-index: 2;
+            @include media-breakpoint-down(xl){
+                top: 80px;
+                display: none;
+            }
+        }
+    }
+    .outer-box{
+        margin: 0 -220px;
+        @include media-breakpoint-down(xxl){
+            margin: 0;
+        }
+    }
+}
+// .project-block
+.project-block-four{
+    margin-bottom: 40px;
+    .inner-box{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .content-box{
+                transform: translateY(0px);
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+            .image-box{
+                .image{
+                    border-radius: 5px;
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .content-box{
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            width: 100%;
+            padding: 25px 30px;
+            opacity: 0;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            background-color: var(--theme-color-light);
+            transition: all 300ms ease;
+            transform: translateY(50px);
+            z-index: 10;
+            .title{
+                font-weight: 500;
+                margin-bottom: 0;
+                @include media-breakpoint-down(xl){
+                    font-size: 20px;
+                }
+            }
+            .icon{
+                position: absolute;
+                top: -30px;
+                right: 30px;
+                width: 60px;    
+                height: 60px;
+                background-color: var(--theme-color1);
+                border-radius: 5px;
+                font-size: 20px;
+                line-height: 60px;
+                text-align: center;
+                color: var(--theme-color-dark);
+                @include media-breakpoint-down(xl){
+                    top: -40px;
+                }
+            }
+        }
+        // .image-box
+        .image-box{
+            .image{
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(md){
+                        font-size: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Five
+====================================================================
+
+***/
+
+.project-section-five{
+    position: relative;
+    padding: 120px 0 80px;
+    background: var(--theme-color-dark);
+    @include media-breakpoint-down(sm){
+        padding: 80px 0 60px;
+    }
+}
+
+// project-block-five
+.project-block-five{
+    margin-bottom: 40px;
+    .inner-box{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .content-box{
+                transform: translateX(0px);
+                opacity: 1;
+                transition: all 300ms ease;
+            }
+            .image-box{
+                .image{
+                    border-radius: 5px;
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                .read-more{
+                    top: 18px;
+                    right: 21px;
+                    opacity: 1;
+                    transition-delay: 100ms;
+                    @include media-breakpoint-down(sm){
+                        right: 20px;
+                        top: 20px;
+                    }
+                }
+            }
+        }
+        .content-box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: var(--theme-color-light);
+            padding: 30px 50px;
+            opacity: 0;
+            border-radius: 0 0 0 5px;
+            transition: all 300ms ease;
+            transform: translateX(-50px);
+            z-index: 10;
+            @include media-breakpoint-down(sm){
+                padding: 20px 20px;
+            }
+            .title{
+                margin-bottom: 0;
+                @include media-breakpoint-down(sm){
+                    font-size: 22px;
+                }
+            }
+        }
+        .image-box{
+            .image{
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    transition: all 0.3s ease;
+                    width: 100%;
+                    min-height: 270px;
+                    object-fit: cover;
+                }
+            }
+            .read-more{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 72px;
+                height: 72px;
+                line-height: 72px;
+                color: var(--theme-color-dark);
+                background-color: var(--bg-theme-color1);
+                border-radius: 50%;
+                font-size: 26px;
+                opacity: 0;
+                text-align: center;
+                transition: all 300ms ease;
+                z-index: 10;
+                @include media-breakpoint-down(sm){
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    font-size: 16px;
+                }
+                &:hover {
+                    background-color: var(--theme-color-dark);
+                    color: var(--theme-color-light);
+                }
+            }
+        }
+    }
+}
+
+
+/***
+
+====================================================================
+    Project Section Six
+====================================================================
+
+***/
+
+.project-section-six{
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+    background-color: var(--theme-color-gray);
+}
+
+// project block six
+.project-block-six{
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        background-color: var(--theme-color-light);
+        border-radius: 10px;
+        &:hover {
+            .image img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        .image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            border-radius: 5px;
+            z-index: 1;
+            img {
+                width: 100%;
+                transition: all 400ms ease;
+            }
+        }
+        .more-btn{
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 24px;
+            color: var(--theme-color-dark);
+            background: var(--theme-color1);
+            transition: all 300ms ease;
+            border-radius: 50%;
+            z-index: 3;
+            display: inline-block;
+            @include media-breakpoint-down(xl){
+                bottom: -25px;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: var(--theme-color-dark);
+                color: var(--theme-color-light);
+            }
+        }
+    }
+
+    .info-box {
+        padding: 51px 30px 30px;
+        @include media-breakpoint-down(xl){
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        .name {
+            margin-bottom: 5px;
+            font-family: DM Sans;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 31px;
+            letter-spacing: 0.15px;
+            @include media-breakpoint-down(sm){
+                font-size: 21px;
+            }
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Seven
+====================================================================
+
+***/
+
+.project-section-seven{
+    position: relative;
+    padding: 120px 0 100px;
+    background-color: var(--theme-color-gray);
+}
+
+// project-block-seven
+.project-block-seven{
+    margin-bottom: 20px;
+    .inner-box{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .image-box{
+                .image{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                .overlay-box{
+                    opacity: 1;
+                    visibility: visible;
+                    &:before{
+                        transform: scale(1)
+                    };
+    
+                    .title{
+                        top: 0;
+                        opacity: 1;
+                        transition-delay: 300ms;
+                    }
+                    .cat{
+                        top: 0;
+                        opacity: 1;
+                        transition-delay: 450ms;
+                    }
+                    .read-more{
+                        opacity: 1;
+                        transform: scale(1);
+                        transition-delay: 600ms;
+                    }
+                }
+            }
+        }
+        .image-box{
+            position: relative;
+            .image{
+                overflow: hidden;
+                img{
+                    transition: all 0.3s ease;
+                    width: 100%;
+                }
+            }
+            .overlay-box{
+                padding: 0 0 50px 30px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                bottom: 20px;
+                right: 20px;
+                transition: all 400ms ease;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(48, 47, 55, 0.9);
+                    transform: scale(.8);
+                    transition: all 300ms ease;
+                }
+                .cat{
+                    color: var(--theme-color-light);
+                    position: relative;
+                    z-index: 99;
+                    top: 20px;
+                    transition: all 300ms ease;
+                    opacity: 0;
+                    @include media-breakpoint-down(xl){
+                        font-size: 14px;
+                    }
+                    @include media-breakpoint-down(lg){
+                        font-size: 16px;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: -20px;
+                        left: 0;
+                        width: 62px;
+                        height: 3px;
+                        line-height: 30px;
+                        background-color: var(--theme-color1);
+                    }
+                }
+                .title{
+                    font-weight: 700;
+                    margin-bottom: 9px;
+                    line-height: 31px;
+                    top: 20px;
+                    opacity: 0;
+                    transition: all 300ms ease;
+                    color: var(--theme-color-light);
+                }
+                .read-more{
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    opacity: 0;
+                    text-align: center;
+                    transform: scale(0);
+                    background: var(--bg-theme-color1);
+                    color: var(--theme-color-dark);
+                    z-index: 10;
+                    transition: all 300ms ease;
+                }
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Eight
+====================================================================
+
+***/
+
+.project-section-eight{
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+    background: var(--theme-color-dark);
+}
+
+// project Block
+.project-block-eight{
+    position: relative;
+    margin-bottom: 65px;
+    .inner-box {
+        position: relative;
+        &:hover {
+            .image img {
+                transform: scale(1.1);
+            }
+            .social-links {
+                transform: scaleY(1);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        .image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            border-radius: 5px;
+            z-index: 1;
+            img {
+                width: 100%;
+                transition: all 400ms ease;
+            }
+        }
+    }
+
+    .info-box {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 16px;
+        text-align: center;
+        padding-right: 20px;
+        background: var(--theme-color1);
+        border-radius: 5px;
+        z-index: 2;
+        transition: all 0.3s ease;
+        white-space : nowrap;
+        .title{
+            margin-bottom: 0;
+            line-height: 30px;
+            font-size: 16px;
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Nine
+====================================================================
+
+***/
+
+.project-section-nine{
+    padding: 120px 0 90px;
+    position: relative;
+    background: var(--theme-color-dark);
+}
+
+// .project-block-nine
+.project-block-nine{
+    .inner-box{
+        &:hover{
+            .image-box{
+                .image{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                .overlay-box{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
+    
+                    .title{
+                        top: 0;
+                        opacity: 1;
+                        transition-delay: 300ms;
+                    }
+                    .text{
+                        top: 0;
+                        opacity: 1;
+                        transition-delay: 450ms;
+                    }
+                    .read-more{
+                        opacity: 1;
+                        transform: scale(1);
+                        transition-delay: 600ms;
+                    }
+                }
+            }
+        }
+        .image-box{
+            position: relative;
+            .image{
+                margin-bottom: 30px;
+                overflow: hidden;
+                img{
+                    transition: all 0.3s ease;
+                    width: 100%;
+                    min-height: 280px;
+                    object-fit: cover;
+                }
+            }
+            .overlay-box{
+                padding: 0 59px;
+                position: absolute;
+                top: 33px;
+                left: 27px;
+                bottom: 32px;
+                right: 28px;
+                opacity: 0;
+                background: var(--theme-color-dark);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transform: scale(.8);
+                transition: all 300ms ease;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    width: 150px;
+                    height: 140px;
+                    background-image: url(../images/icons/bg-border.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: 9;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    width: 150px;
+                    height: 140px;
+                    background-image: url(../images/icons/bg-border-2.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: 9;
+                }
+                .text{
+                    color: var(--theme-color-light);
+                    position: relative;
+                    z-index: 99;
+                    top: 20px;
+                    opacity: 0;
+                    transition: all 300ms ease;
+                }
+                .title{
+                    font-weight: 700;
+                    margin-bottom: 22px;
+                    line-height: 31px;
+                    color: var(--theme-color-light);
+                    top: 20px;
+                    opacity: 0;
+                    transition: all 300ms ease;
+                }
+                .read-more{
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--theme-color1);
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 20px;
+                    opacity: 0;
+                    transform: scale(0);
+                    margin: 0 auto 20px;
+                    margin-top: 10px;
+                    color: var(--theme-color-dark);
+                    transition: all 300ms ease;
+                }
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Project Section Ten
+====================================================================
+
+***/
+
+.project-section-ten{
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+    background: var(--theme-color-gray);
+}
+
+// project Block ten
+.project-block-ten{
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        &:hover {
+            .info-box {
+                &:before {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            .image img {
+                transform: scale(1.1);
+            }
+            .social-links {
+                transform: scaleY(1);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        .image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            border-radius: 5px;
+            z-index: 1;
+            img {
+                width: 100%;
+                transition: all 400ms ease;
+            }
+        }
+    }
+
+    .info-box {
+        margin: -77px 0 27px 33px;
+        position: relative;
+        padding: 25px 32px 38px;
+        padding-right: 20px;
+        background: var(--theme-color-light);
+        border-bottom: 5px solid #E3E3E3;
+        z-index: 2;
+        transition: all 300ms ease;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: var(--theme-color1);
+            transition: all 300ms ease;
+            border-radius: 10px;
+        }
+        @include media-breakpoint-down(xl){
+            margin-left: 0;
+        }
+        .title{
+            margin-bottom: 10px;
+        }
+        .text{
+            line-height: 30px;
+        }
+        .read-more{
+            position: absolute;
+            bottom: -27px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #E3E3E3;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            border-right-color: 5px;
+            display: inline-block;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: var(--theme-color1);
+                color: var(--theme-color-dark);
+            }
+        }
+    }
+}
+
+

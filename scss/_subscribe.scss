@@ -1,0 +1,783 @@
+/*** 
+
+====================================================================
+    Subscribe Section
+====================================================================
+
+***/
+
+.subscribe-section{
+    position: relative;
+    background-color: var(--theme-color-dark);
+    .content-column {
+        position: relative;
+        .inner-column {
+            padding: 60px 20px 65px;
+            padding-left: 75px;
+            max-width: 660px;
+            @include media-breakpoint-down(xl){
+                padding-left: 20px;
+            }
+            @include media-breakpoint-down(lg){
+                text-align: center;
+                margin: 0 auto;
+            }
+            .sec-title{
+                margin-bottom: 30px;
+            }
+            .subscribe-form-one{
+                max-width: 570px;
+                @include media-breakpoint-down(lg){
+                    margin: 0 auto;
+                }
+            }
+
+        }
+    }
+    .image-column{
+        position: relative;
+        .image{
+            margin-bottom: 0;
+            height: 100%;
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// Subscribe Form One
+.subscribe-form-one{
+    position: relative;
+    .form-group {
+        position: relative;
+        display: flex;
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+        }
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            height: 55px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 25px;
+            color: var(--theme-color-light);
+            padding: 13px 20px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,.4);
+            border-radius: 5px;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){margin-bottom: 20px;}
+            &::placeholder {
+                color: var(--theme-color-light);
+            }
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+        }
+        .theme-btn{
+            background-color: var(--theme-color-light);
+            margin-left: 30px;
+            padding: 12px 50px;
+            &::before {background-color: var(--bg-theme-color1);}
+            &:hover {color: var(--theme-color-dark);}
+            @include media-breakpoint-down(sm){
+                padding: 12px 30px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section two
+====================================================================
+
+***/
+
+.subscribe-section-two{
+    position: relative;
+    padding: 50px 0 50px;
+    background: var(--theme-color-dark);
+    min-height: 456px;
+    // image-column
+    .image-column{
+        @include media-breakpoint-down(lg){
+            margin-top: 40px;
+        }
+        .inner-column{
+            padding-left: 80px;
+            @include media-breakpoint-down(xl){padding-left: 0;}
+            .image-box{
+                text-align: center;
+            }
+        }
+    }
+    // content-column
+    .content-column{
+        .inner-column{
+            padding-left: 110px;
+            padding-right: 30px;
+            @include media-breakpoint-down(xl){padding: 0;}
+            @include media-breakpoint-down(lg){
+                text-align: center;
+            }
+            .sec-title{
+                margin-bottom: 25px;
+                .sub-title{
+                    padding-left: 0;
+                    &:before{
+                        display: none;
+                    }
+                }
+                .text{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// Subscribe Form Two
+.subscribe-form-two{
+    position: relative;
+    .form-group {
+        position: relative;
+        max-width: 410px;
+        @include media-breakpoint-down(lg){
+            margin: 0 auto;
+        }
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            height: 50px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 30px;
+            color: var(--theme-color-dark);
+            padding: 18px 20px;
+            padding-right: 160px;
+            background: var(--theme-color-light);
+            border: 2px solid rgba(255,255,255,.4);
+            transition: all 300ms ease;
+            &::placeholder {
+                color: #82828A;
+            }
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+        }
+        .theme-btn{
+            position: absolute;
+            padding: 10px 30px;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                padding: 10px 20px;
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section three
+====================================================================
+
+***/
+
+.subscribe-section-three{
+    position: relative;
+    padding: 120px 0;
+    background: var(--theme-color-dark);
+    .bg-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/icons/bg-shape.png);
+    }
+    // content-column
+    .content-column{
+        .inner-column{
+            position: relative;
+            padding-left: 160px;
+            @include media-breakpoint-down(xxl){
+                padding: 0;
+                text-align: center;
+                br{display: none;}
+            }
+            .icon-box{
+                position: absolute;
+                left: 0;
+                top: 0;
+                @include media-breakpoint-down(xxl){
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+                .icon{
+                    font-size: 120px;
+                    color: var(--theme-color1);
+                    line-height: 1em;
+                    @include media-breakpoint-down(xxl){
+                        font-size: 72px;
+                    }
+                }
+            }
+            .title{
+                color: var(--theme-color-light);
+                @include media-breakpoint-down(sm){
+                    font-size: 36px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+    .form-column{
+        position: relative;
+        @include media-breakpoint-down(xxl){
+            text-align: center;
+        }
+        .subscribe-form-three{
+            margin-top: 30px;
+            display: inline-block;
+            @include media-breakpoint-down(lg){
+                display: block;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// Subscribe Form Three
+.subscribe-form-three{
+    position: relative;
+    .form-group{
+        position: relative;
+        display: flex;
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            max-width:630px;
+            margin: 0 auto;
+        }
+        .input-outer{
+            position: relative;
+            width: 513px;
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+            input[type=text],
+            input[type=email] {
+                position: relative;
+                display: block;
+                height: 60px;
+                width: 100%;
+                font-size: 16px;
+                line-height: 30px;
+                color: var(--theme-color-light);
+                padding: 14px 20px;
+                padding-left: 37px;
+                background: transparent;
+                border-bottom: 1px solid var(--theme-color-light);
+                transition: all 300ms ease;
+                @include media-breakpoint-down(sm){margin-bottom: 20px;}
+                &::placeholder {
+                    color: var(--theme-color-light);
+                }
+                @include media-breakpoint-down(lg){
+                    width: 100%;
+                }
+            }
+            .icon{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                font-size: 18px;
+                line-height: 60px;
+                color: var(--theme-color-light);
+            }
+        }
+        .theme-btn{
+            min-width: 200px;
+            margin-left: 30px;
+            padding: 12px 30px;
+            @include media-breakpoint-down(lg){
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section four
+====================================================================
+
+***/
+
+.subscribe-section-four{
+    position: relative;
+    padding: 90px 0;
+    // content-column
+    .content-column{
+        .inner-column{
+            position: relative;
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(lg){
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .icon{
+                position: relative;
+                font-size: 120px;
+                color: var(--theme-color-dark);
+                line-height: 1.2em;
+                margin-right: 30px;
+                @include media-breakpoint-down(lg){
+                    font-size: 95px;
+                    margin-right: 0;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 80px;
+                }
+            }
+            .title{
+                margin-bottom: 0;
+                @include media-breakpoint-down(sm){
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+    .form-column{
+        .inner-column{
+            padding-top: 40px;
+        }
+    }
+}
+
+// Subscribe Form Three
+.subscribe-form-four{
+    position: relative;
+    .form-group{
+        position: relative;
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            height: 60px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 30px;
+            color: var(--theme-color-dark);
+            padding: 14px 20px;
+            background: transparent;
+            border-radius: 5px;
+            border: 2px solid var(--theme-color-dark);
+            transition: all 300ms ease;
+            &::placeholder {
+                color: var(--theme-color-dark);
+            }
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+        }
+        .theme-btn{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            min-width: 160px;
+            padding: 15px 30px;
+            line-height: 20px;
+            @include media-breakpoint-down(md){
+                position: relative;
+                right: 0;
+                top: 0;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section five
+====================================================================
+
+***/
+
+.subscribe-section-five{
+    position: relative;
+    background-color: var(--theme-color-gray);
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: var(--theme-color-dark);
+    }
+    .outer-box{
+        position: relative;
+        background-color: var(--theme-color1);
+        padding: 80px;
+        border-radius: 5px;
+        z-index: 10;
+        @include media-breakpoint-down(xl){
+            padding: 40px;
+        }
+        @include media-breakpoint-down(sm){
+            padding: 40px 20px 20px;
+        }
+        // content-column
+        .content-column{
+            .inner-column{
+                position: relative;
+                display: flex;
+                align-items: center;
+                @include media-breakpoint-down(xl){
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .icon-box{
+                    position: relative;
+                    margin-right: 20px;
+                    @include media-breakpoint-down(lg){
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
+                    .icon{
+                        font-size: 80px;
+                        color: var(--theme-color-dark);
+                        line-height: 1.2em;
+                    }
+                }
+                .title{
+                    margin-bottom: 0;
+                    font-family: Arimo;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 62px;
+                    @include media-breakpoint-down(xxl){
+                        font-size: 42px;
+                        line-height: 1.2em;
+                        text-align: center;
+                    }
+                    @include media-breakpoint-down(sm){
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+        .form-column{
+            .inner-column{
+                padding-top: 30px;
+                padding-left: 55px;
+                @include media-breakpoint-down(lg){
+                    padding: 20px 0 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+// Subscribe Form Five
+.subscribe-form-five{
+    position: relative;
+    .input-outer{
+        position: relative;
+        background-color: var(--theme-color-light);
+        border-radius: 5px;
+        overflow: hidden;
+        .icon{
+            position: absolute;
+            left: 17px;
+            top: 0;
+            line-height: 70px;
+            text-align: center;
+            z-index: 3;
+        }
+    }
+    .form-group{
+        position: relative;
+        background-color: var(--theme-color-light);
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            border: 0;
+            height: 70px;
+            width: 100%;
+            line-height: 30px;
+            padding: 15px 45px;
+            padding-right: 120px;
+            color: var(--theme-color-dark);
+            background-color: var(--theme-color-light);
+            @include media-breakpoint-down(sm){
+                padding-right: 30px;
+            }
+            &::placeholder {
+                color: var(--theme-color-dark);
+            }
+        }
+        .theme-btn{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 85px;
+            font-size: 24px;
+            line-height: 30px;
+            padding: 20px 20px;
+            background: var(--theme-color-dark);
+            border-radius: 0 5px 5px 0;
+            color: var(--theme-color-light);
+            @include media-breakpoint-down(sm){
+                position: relative;
+                display: block;;
+                width: 100%;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section six
+====================================================================
+
+***/
+
+.subscribe-section-six{
+    position: relative;
+    background-color: var(--theme-color-dark);
+    padding: 108px 0;
+    .outer-box{
+        background-color: var(--theme-color1);
+        padding: 54px 60px;
+        border-radius: 5px;
+        @include media-breakpoint-down(md){
+            padding: 60px 20px 29px;
+        }
+        // content-column
+        .content-column{
+            .inner-column{
+                position: relative;
+                padding-left: 130px;
+                @include media-breakpoint-down(xl){
+                    padding-left: 0; 
+                    text-align: center;
+                }
+                .icon-box{
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                    @include media-breakpoint-down(xl){
+                        position: relative;
+                        top: 0;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                    .icon{
+                        font-size: 95px;
+                        color: var(--theme-color-dark);
+                        line-height: 95px;
+                    }
+                }
+                .title{
+                    margin-bottom: 0;
+                    @include media-breakpoint-down(xxl){
+                        font-size: 40px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+        .form-column{
+            .inner-column{
+                padding-left: 70px;
+                padding-top: 30px;
+                @include media-breakpoint-down(xl){
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Subscribe Form Six
+.subscribe-form-six{
+    position: relative;
+    .form-group{
+        position: relative;
+        background-color: var(--theme-color-light);
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            border: 0;
+            height: 58px;
+            width: 100%;
+            line-height: 28px;
+            padding: 15px 30px;
+            padding-right: 180px;
+            color: var(--theme-color-dark);
+            background-color: var(--theme-color-light);
+            @include media-breakpoint-down(sm){
+                padding-right: 30px;
+            }
+            &::placeholder {
+                color: var(--theme-color-dark);
+            }
+        }
+        .theme-btn{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            line-height: 28px;
+            padding: 15px 30px;
+            border-radius: 0;
+            @include media-breakpoint-down(md){
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Subscribe Section seven
+====================================================================
+
+***/
+
+.subscribe-section-seven{
+    position: relative;
+    padding: 120px 0;
+    background: var(--theme-color-gray);
+    min-height: 360px;
+    .outer-box{
+        padding: 70px 0;
+        position: relative;
+        background: var(--theme-color-dark);
+        @include media-breakpoint-down(sm){
+            padding: 50px 0;
+        } 
+        .icon-star-1{
+            position: absolute;
+            top: 75px;
+            left: 72px;
+            @include media-breakpoint-down(xl){
+                top: 30px;
+                left: 30px;
+            }
+            @include media-breakpoint-down(lg){display: none;}
+        }
+        .icon-star-2{
+            position: absolute;
+            bottom: 90px;
+            right: 140px;
+            @include media-breakpoint-down(xl){
+                bottom: 30px;
+                right: 30px;
+            }
+            @include media-breakpoint-down(lg){display: none;}
+        }
+        
+        // content-Box
+        .content-box{
+            position: relative;
+            padding-left:380px;
+            padding-right: 30px;
+            @include media-breakpoint-down(xl){
+                padding-left: 30px;
+                text-align: center;
+            }
+            .title{
+                position: relative;
+                color: var(--theme-color-light);
+                margin-bottom: 30px;
+                @include media-breakpoint-down(md){
+                    font-size: 36px;
+                } 
+            }            
+        }
+    }
+}
+
+// Subscribe Form Seven
+.subscribe-form-seven{
+    position: relative;
+    max-width: 585px;
+    @include media-breakpoint-down(xl){
+        margin: 0 auto;
+    }
+    .form-group{
+        position: relative;
+        input[type=text],
+        input[type=email] {
+            position: relative;
+            display: block;
+            border: 0;
+            height: 58px;
+            width: 100%;
+            line-height: 28px;
+            padding: 15px 30px;
+            padding-right: 180px;
+            color: var(--theme-color-dark);
+            background-color: var(--theme-color-light);
+            @include media-breakpoint-down(sm){
+                padding-right: 30px;
+            }
+            &::placeholder {
+                color: var(--theme-color-dark);
+            }
+        }
+        .theme-btn{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            line-height: 28px;
+            padding: 15px 30px;
+            border-radius: 0;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
