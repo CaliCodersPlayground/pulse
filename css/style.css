@@ -7473,20 +7473,6 @@ Banner Section Ten
   .about-section-five .image-column .inner-column {
     padding: 0;
   }
-}
-.about-section-five .image-column .inner-column:before {
-  content: "";
-  position: absolute;
-  top: 32px;
-  left: 60px;
-  width: 528.613px;
-  height: 516.308px;
-  pointer-events: none;
-  -webkit-transform: skewX(-5deg);
-          transform: skewX(-5deg);
-  border: 0px solid var(--bg-theme-color1);
-  z-index: 9;
-}
 @media (max-width: 1199.98px) {
   .about-section-five .image-column .inner-column:before {
     display: none;
