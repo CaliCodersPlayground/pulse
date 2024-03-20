@@ -7484,7 +7484,7 @@ Banner Section Ten
   pointer-events: none;
   -webkit-transform: skewX(-5deg);
           transform: skewX(-5deg);
-  border: 1.5px solid var(--bg-theme-color1);
+  border: 0px solid var(--bg-theme-color1);
   z-index: 9;
 }
 @media (max-width: 1199.98px) {
